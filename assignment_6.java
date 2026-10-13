@@ -56,7 +56,7 @@ class Addition extends Calculation
 	{
 		int sum = num1 + num2;
 		
-		System.out.println("The Addition of "+ num1 +"and"+ num2 +"is :"+sum+"\n");
+		System.out.println("The Addition of "+ num1 +" and "+ num2 +" is :"+sum+"\n");
 	}
 }
 
@@ -66,7 +66,7 @@ class Subtraction extends Calculation
 	{
 		int sub = num1 - num2;
 		
-		System.out.println("The Substraction of "+ num1 +"and"+ num2 +"is :"+sub+"\n");
+		System.out.println("The Substraction of "+ num1 +" and "+ num2 +" is :"+sub+"\n");
 	}
 }
 
@@ -76,7 +76,7 @@ class Multiplication extends Calculation
 	{
 		int mul = num1 * num2;
 		
-		System.out.println("The Multiplication of "+ num1 +"and"+ num2 +"is :"+mul+"\n");
+		System.out.println("The Multiplication of "+ num1 +"and"+ num2 +" is :"+mul+"\n");
 	}
 }
 
@@ -84,9 +84,9 @@ class Division extends Calculation
 {
 	public void Calculation()
 	{
-		int div = num1 / num2;
+		float div = num1 / num2;
 		
-		System.out.println("The Division of "+ num1 +"and"+ num2 +"is :"+div+"\n");
+		System.out.println("The Division of "+ num1 +"and"+ num2 +" is :"+div+"\n");
 	}
 }
 
@@ -96,7 +96,7 @@ class Reminder extends Calculation
 	{
 		int reminder = num1% num2;
 		
-		System.out.println("The Reminder of "+ num1 +"%"+ num2 +"is :"+reminder+"\n");
+		System.out.println("The Reminder of "+ num1 +"%"+ num2 +" is :"+reminder+"\n");
 	}
 }
 
@@ -124,9 +124,10 @@ class main
 		 	
 		 	try
 		 	{
-		 	
-		 		calculation.input();
-		 		
+		 		if (choice != 6)
+		 		{
+		 			calculation.input();
+		 		}
 		 		switch(choice)
 			 		{
 			 			case 1:
@@ -173,4 +174,3 @@ class main
 	}
 		
 }
-
